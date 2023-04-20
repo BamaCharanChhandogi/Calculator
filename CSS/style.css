@@ -54,6 +54,7 @@ button{
     box-shadow: -8px -8px 15px rgba(255,255,255, 0.1);
     cursor: pointer;
     font-size: 22px;
+    transition: transform 800ms;
 }
 button:hover{
     transform:scale(1.4);
