@@ -1,5 +1,6 @@
 let input= document.getElementById('inputBox');
 let buttons=document.querySelectorAll('button');
+const equalsButton = document.getElementById("equals");
 
 let string="";
 let arr=Array.from(buttons);
@@ -23,3 +24,31 @@ arr.forEach(button => {
         }
     })
 })
+
+// Listen for the "keydown" event on the document
+// document.addEventListener("keydown", (event) => {
+//     let key = event.key;
+//     if (key >= 0 && key <= 9) {
+//         string += key;
+//         input.value = string;
+//     }
+//     else if (key === '+' || key === '-' || key === '*' || key === '/') {
+//         string += key;
+//         input.value = string;
+//     }
+//     else if (key === '.' && !string.includes('.')) {
+//         string += key;
+//         input.value = string;
+//     }
+//     else if (key === 'Enter') {
+//         equalsButton.click();
+//     }
+//     else if (key === 'Backspace') {
+//         string = string.substring(0, string.length - 1);
+//         input.value = string;
+//     }
+//     else if (key === 'Escape') {
+//         string = "";
+//         input.value = string;
+//     }
+// });
